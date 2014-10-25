@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TBAudioPlayer));
             this.lblNowPLaying = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.updateGuiTimer = new System.Windows.Forms.Timer(this.components);
@@ -36,6 +37,7 @@
             this.playButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlPlayList = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNowPLaying
@@ -63,7 +65,7 @@
             this.btnLoadSong.Name = "btnLoadSong";
             this.btnLoadSong.Size = new System.Drawing.Size(75, 23);
             this.btnLoadSong.TabIndex = 2;
-            this.btnLoadSong.Text = "button1";
+            this.btnLoadSong.Text = "Open File";
             this.btnLoadSong.UseVisualStyleBackColor = true;
             this.btnLoadSong.Click += new System.EventHandler(this.btnLoadSong_Click);
             // 
@@ -72,11 +74,12 @@
             this.playButton.FlatAppearance.BorderSize = 0;
             this.playButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.playButton.Font = new System.Drawing.Font("Webdings", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playButton.Location = new System.Drawing.Point(203, 120);
+            this.playButton.Image = global::TBAudioPlayer.Properties.Resources.btnPlay;
+            this.playButton.Location = new System.Drawing.Point(176, 96);
+            this.playButton.Margin = new System.Windows.Forms.Padding(0);
             this.playButton.Name = "playButton";
             this.playButton.Size = new System.Drawing.Size(60, 60);
             this.playButton.TabIndex = 3;
-            this.playButton.Text = "4";
             this.playButton.UseVisualStyleBackColor = true;
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
@@ -93,13 +96,21 @@
             this.pnlPlayList.AllowDrop = true;
             this.pnlPlayList.AutoScroll = true;
             this.pnlPlayList.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pnlPlayList.Location = new System.Drawing.Point(417, 12);
+            this.pnlPlayList.Location = new System.Drawing.Point(417, 26);
             this.pnlPlayList.Margin = new System.Windows.Forms.Padding(0);
             this.pnlPlayList.Name = "pnlPlayList";
-            this.pnlPlayList.Size = new System.Drawing.Size(223, 276);
+            this.pnlPlayList.Size = new System.Drawing.Size(223, 262);
             this.pnlPlayList.TabIndex = 5;
             this.pnlPlayList.DragDrop += new System.Windows.Forms.DragEventHandler(this.pnlPlayList_DragDrop);
             this.pnlPlayList.DragEnter += new System.Windows.Forms.DragEventHandler(this.pnlPlayList_DragEnter);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(414, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(226, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Drop compatible files here for playlist";
             // 
             // TBAudioPlayer
             // 
@@ -111,11 +122,13 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.playButton);
             this.Controls.Add(this.btnLoadSong);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblNowPLaying);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TBAudioPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "TBAudioPlayer";
             this.ResumeLayout(false);
 
         }
@@ -129,6 +142,7 @@
         private System.Windows.Forms.Button playButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlPlayList;
+        private System.Windows.Forms.Label label1;
     }
 }
 

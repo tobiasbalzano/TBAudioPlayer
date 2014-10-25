@@ -146,13 +146,18 @@ namespace TBAudioPlayer
 
         private void pnlPlayList_DragDrop(object sender, DragEventArgs e)
         {
-            
-            string[] droppedFilePaths = (string[])e.Data.GetData(DataFormats.FileDrop);
-            string droppedFilePath = droppedFilePaths[0];
-            playListItem newPlaylistItem = new playListItem(droppedFilePath, clickPlayList_Click);
-            newPlaylistItem.Location = new System.Drawing.Point(0, playList.Count() * newPlaylistItem.Size.Height);
-            playList.Add(newPlaylistItem);
-            pnlPlayList.Controls.Add(newPlaylistItem);
+                string[] droppedFilePaths = (string[])e.Data.GetData(DataFormats.FileDrop);
+                
+                foreach (string droppedFilePath in droppedFilePaths)
+                {
+                    if (Path.GetExtension(droppedFilePath) == ".mp3")
+                    {
+                        playListItem newPlaylistItem = new playListItem(droppedFilePath, clickPlayList_Click);
+                        newPlaylistItem.Location = new System.Drawing.Point(0, playList.Count() * newPlaylistItem.Size.Height);
+                        playList.Add(newPlaylistItem);
+                        pnlPlayList.Controls.Add(newPlaylistItem);
+                    }
+                }
         }
 
     }

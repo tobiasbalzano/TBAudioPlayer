@@ -7,4 +7,3 @@ c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlaye
 c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\x64\Debug\TBaudioPlayer.csproj.GenerateResource.Cache
 c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\x64\Debug\TBAudioPlayer.exe
 c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\x64\Debug\TBAudioPlayer.pdb
-c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\x64\Debug\TBaudioPlayer.csprojResolveAssemblyReference.cache
