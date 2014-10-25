@@ -1,0 +1,10 @@
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\bin\Debug\TBaudioPlayer.exe.config
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\bin\Debug\TBAudioPlayer.exe
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\bin\Debug\TBAudioPlayer.pdb
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\bin\Debug\irrKlang.NET4.dll
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\Debug\TBaudioPlayer.csprojResolveAssemblyReference.cache
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\Debug\TBAudioPlayer.TBAudioPlayer.resources
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\Debug\TBAudioPlayer.Properties.Resources.resources
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\Debug\TBaudioPlayer.csproj.GenerateResource.Cache
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\Debug\TBAudioPlayer.exe
+c:\users\tobias\documents\visual studio 2013\Projects\TBaudioPlayer\TBaudioPlayer\obj\Debug\TBAudioPlayer.pdb
